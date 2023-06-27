@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Annotation Tool</title>
+  <style>
+    .popup {
+      position: absolute;
+      background-color: #ffffff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .popup-input {
+      width: 150px;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+
+    .popup-button {
+      padding: 5px 10px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+<body>
+  <input type="file" id="imageInput">
+  <br>
+  <button id="deleteButton">Delete annotation</button>
+  <br>
+  <button id="saveButton">Save</button>
+  <br>
+  <canvas id="canvas"></canvas>
+  <div id="popupDiv" style="display: none;">
+    <input type="text" id="popupInput">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
